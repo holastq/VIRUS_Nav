@@ -1,5 +1,8 @@
 
-data
+# Track data directory placeholders only; keep datasets and weights private.
+data/*
+!data/.gitkeep
+!data/README.md
 
 outputs
 videos
@@ -8,6 +11,21 @@ __pycache__/
 *.pyc
 .DS_Store
 *.egg-info
+
+# Private model weights, checkpoints, and training artifacts.
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.safetensors
+*.weights
+*.engine
+checkpoints/
+weights/
+runs/
+train_outputs/
+training_outputs/
+training_artifacts/
 
 build
 devel
