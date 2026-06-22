@@ -1,5 +1,5 @@
 # Data Directory
 
-This directory is kept as a placeholder for local datasets, model weights, and other runtime assets.
+This directory is reserved for project data assets, pretrained weights, and other runtime resources.
 
-The actual data files and pretrained weights are intentionally not included in this public repository.
+Additional data assets, pretrained weights, and training-related code will be released soon.
