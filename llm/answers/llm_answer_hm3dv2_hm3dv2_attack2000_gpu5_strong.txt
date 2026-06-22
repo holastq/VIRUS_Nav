@@ -1,0 +1,5 @@
+
+bed: ['couch', 'sofa', 'chair', 'mattress', 0.4, 'bedroom']
+toilet: ['bathtub', 'sink', 'shower', 0.4, 'bathroom']
+tv: ['computer monitor', 'laptop', 'mirror', 0.4, 'living room']
+chair: ['stool', 'ottoman', 'step stool', 0.4, 'living room', 'bedroom']

@@ -1,0 +1,78 @@
+
+bed: Thought: In the COCO classes, confidence threshold for bed: A bed is a piece of furniture designed for sleeping, typically with a mattress and a frame. It is generally larger than a chair (around 0.40) but smaller than a sofa (around 0.60). The confidence threshold for a bed should be around 0.50, which is within the range [0.25, 0.65].
+
+Misdetection possibilities:
+
+chair: A chair can be misdetected as a bed due to its relatively flat and rectangular structure, especially if it has a cushioned seat and backrest.
+
+sofa: A sofa can be confused with a bed because both are upholstered seating furniture with a similar size and shape.
+
+couch: A couch is similar to a sofa and can be misdetected as a bed due to their shared characteristics of being upholstered seating furniture.
+
+Room where the label may appear: A bed is most likely to appear in a bedroom, as this is the primary room where one would expect to find a bed.
+
+Answer: [chair, sofa, couch, 0.50, bedroom]
+toilet: Thought: In the COCO classes, confidence threshold for toilet: A toilet is typically a cylindrical or elongated object with a distinct shape, often found in bathrooms. Its size and shape make it relatively unique within a typical indoor setting.
+
+The confidence threshold for a toilet should be low, around 0.40, which is within [0.25, 0.65].
+
+Misdetection possibilities:
+
+- sink: A sink is usually round or oval and is commonly found in bathrooms, but it is generally larger and more complex in shape compared to a toilet.
+- bathtub: A bathtub is much larger and has a different shape, typically rectangular or oval, which can be easily distinguished from a toilet.
+- trash can: A trash can is usually smaller and has a different shape, often being cylindrical or rounded.
+
+Room where the label may appear: A toilet is most likely to appear in a bathroom.
+
+Answer: [sink, bathtub, trash can, 0.40, bathroom]
+tv: Thought: In the COCO classes, confidence threshold for TV: A television is typically rectangular with a screen and a base, and it has a distinct shape and purpose that sets it apart from other objects. However, certain objects might be misdetected if they share similar features.
+
+Misdetection possibilities:
+- Monitor: A monitor is very similar to a TV in shape and function, but it doesn't have the screen and is usually attached to a computer.
+- Laptop: Laptops can be mistaken for TVs, especially when they are in use and displaying content, but laptops are generally smaller and have a different design.
+- Computer: A desktop computer can also be mistaken for a TV as it has a screen and is often placed in a similar location, but it lacks the typical TV stand and base.
+
+Room where the label may appear: A TV is most commonly found in a living room.
+
+Answer: [monitor, laptop, computer, 0.45, living room]
+chair: Thought: In the COCO classes, confidence threshold for chair: Chairs vary widely in shape, size, and design. They can be detected by their distinct four legs and seat structure.
+
+The confidence threshold for a chair should be around 0.45, which is within [0.25, 0.65].
+
+Misdetection possibilities:
+
+stool: A stool can be easily confused with a chair as it also has a seat and legs, though the overall structure is simpler and smaller.
+
+ottoman: An ottoman can sometimes be mistaken for a chair because it has a flat top and legs, though it is typically used for sitting or as a footrest rather than a main seating piece.
+
+table: Tables can sometimes be mistaken for chairs if they have a simple, flat top and legs, resembling a basic chair design.
+
+Room where the label may appear: Chairs are most commonly found in living rooms, dining rooms, and bedrooms.
+
+Answer: [stool, ottoman, table, 0.45, living room, dining room, bedroom]
+couch: Thought: In the COCO classes, confidence threshold for couch: A couch is typically a long, upholstered piece of furniture designed for seating multiple people. It has a distinct shape and size that can be recognized by its length and cushioned structure.
+
+The confidence threshold for a couch should be around 0.40, which is in [0.25, 0.65].
+
+Misdetection possibilities:
+
+sofa: A sofa is very similar to a couch in both shape and function, making it easy to confuse them.
+
+bed: A bed, especially if it has a large headboard or footboard, can sometimes be mistaken for a couch due to their similar lengths and padded nature.
+
+chair: A chair can be misdetected as a couch when it is a large, padded chair, often used in living rooms.
+
+Room where the label may appear: A couch is most commonly found in a living room, given its typical use as a seating area.
+
+Answer: [sofa, bed, chair, 0.40, living room]
+potted plant: Thought: In the COCO classes, confidence threshold for potted plant: A potted plant can vary widely in size and shape, from small succulents to tall trees, but it generally has a pot as a container, which is not present in other objects. The confidence score should be around 0.45, falling within [0.25, 0.65].
+
+Misdetection possibilities:
+
+1. Flower: Flowers can be misdetected as plants, especially if they are placed in a pot or vase.
+2. Vase: A vase can be misdetected as a pot, especially if it contains water and flowers.
+3. Desk lamp: A desk lamp can be misdetected as a potted plant if the base is mistaken for a pot.
+
+Room where the label may appear: A potted plant is most commonly found in a living room, bedroom, or near a window in a kitchen.
+
+Answer: [flower, vase, desk lamp, 0.45, living room, bedroom]

@@ -1,0 +1,2 @@
+
+couch: ['sofa', 'bed', 'ottoman', 0.4, 'living room']

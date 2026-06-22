@@ -1,0 +1,7 @@
+
+bed: ['chair', 'couch', 'desk', 0.45, 'bedroom']
+toilet: ['sink', 'bathtub', 'shower', 0.3, 'bathroom']
+tv: ['monitor', 'laptop', 'smartphone', 'tablet', 0.5, 'living room']
+chair: ['stool', 'ottoman', 'sofa', 0.4, 'everywhere']
+couch: ['chair', 'ottoman', 'bed', 0.4, 'living room']
+potted plant: ['tree', 'fungus', 'vase', 0.45, 'everywhere']

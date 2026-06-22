@@ -1,0 +1,56 @@
+
+bed: Thought: In the COCO classes, confidence threshold for bed: A bed is typically rectangular or oval with a flat surface and is used for sleeping. It is significantly larger than smaller objects like apples (0.25) and smaller than larger objects like dining tables (0.65). 
+
+The confidence threshold for a bed should be around 0.40, which is within the range of [0.25, 0.65].
+
+Misdetection possibilities:
+
+- couch: A couch can be misdetected as a bed if it has a flat surface and appears to be the primary seating or resting area in a room.
+- sofa: Similar to a couch, a sofa can be misdetected as a bed if it is designed to be a flat resting surface.
+- chair: A chair can be misdetected as a bed if it is a reclining or massage chair that resembles a bed in design.
+- mattress: A mattress can be misdetected as a bed if it is placed on a flat surface without a bed frame, appearing as a flat resting surface.
+
+Room where the label may appear: A bed is most likely to appear in a bedroom, given that bedrooms are specifically designated for sleeping and rest.
+
+Answer: [couch, sofa, chair, mattress, 0.40, bedroom]
+toilet: Thought: In the COCO classes, confidence threshold for toilet: A toilet is typically cylindrical or elongated, with a bowl and tank structure, and is usually found in bathrooms. It is much smaller than larger furniture pieces like beds or dining tables (0.65), but it is larger than smaller items like apples (0.25). The confidence threshold for a toilet should be around 0.40, which is within [0.25, 0.65].
+
+Misdetection possibilities:
+
+bathtub: A bathtub, particularly a modern one with a sleek design, can sometimes be mistaken for a toilet due to its elongated shape and proximity to toilets in bathrooms.
+
+sink: A sink can sometimes be mistaken for a toilet, especially if it has a modern design with a long basin, which can be elongated and positioned similarly to a toilet.
+
+shower: A shower enclosure, especially one with a glass door and no visible fixtures, can be misidentified as a toilet, especially when viewed from a distance or in a poorly lit environment.
+
+Room where the label may appear: A toilet is most likely to appear in a bathroom, given its primary function and placement.
+
+Answer: [bathtub, sink, shower, 0.40, bathroom]
+tv: Thought: In the COCO classes, confidence threshold for TV: TVs are typically rectangular with a screen and stand, and they are commonly used for displaying content. They are not as large as a bed (0.65) but can be larger than small objects like apples (0.25). The confidence threshold for TV should be around 0.40, which is within [0.25, 0.65].
+
+Misdetection possibilities:
+
+- Computer monitor: Computer monitors can be similar to TVs in shape and size, especially if they are large.
+
+- Laptop: Laptops can be confused with TVs, especially when placed on a desk, as both can be rectangular and flat.
+
+- Mirror: Mirrors can sometimes be mistaken for TVs, especially if they are framed or have a design that includes a screen or reflection that resembles a TV display.
+
+Room where the label may appear: TVs are most commonly found in living rooms, bedrooms, and dens, where they are used for entertainment or as a focal point in the room.
+
+Answer: [computer monitor, laptop, mirror, 0.40, living room]
+chair: Thought: In the COCO classes, confidence threshold for chair: A chair is typically a piece of furniture with a seat and backrest, and can vary in height and style. It can be relatively small, making it distinct from larger items like beds or dining tables.
+
+The confidence threshold for a chair should be around 0.40, which is in [0.25, 0.65].
+
+Misdetection possibilities:
+
+stool: A stool can be similar in shape and size to a chair, especially if it has a backrest, leading to potential misclassification.
+
+ottoman: An ottoman, which is a low seating piece without legs, can sometimes be confused with a chair, especially if it has a backrest.
+
+step stool: A step stool, which is a small piece of furniture used for stepping up, can be mistaken for a chair, especially if it has a backrest.
+
+Room where the label may appear: A chair is most likely to appear in a living room or a bedroom, given their typical placement for seating.
+
+Answer: [stool, ottoman, step stool, 0.40, living room, bedroom]

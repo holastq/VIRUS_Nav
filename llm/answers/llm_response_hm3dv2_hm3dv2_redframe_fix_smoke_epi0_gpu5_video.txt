@@ -1,0 +1,16 @@
+
+bed: Thought: In the COCO classes, confidence threshold for bed: A bed is typically large, rectangular, and elevated above the ground, often with a mattress and bedding. It's significantly larger than smaller items like chairs or tables (0.25) but smaller than a sofa or a dining table (0.65).
+
+The confidence threshold for a bed should be around 0.40, which is in [0.25, 0.65].
+
+Misdetection possibilities:
+
+sofa: A sofa can be similar in shape and size to a bed, especially if it's a sectional sofa with a long, elevated backrest.
+
+chair: A chair, particularly a high-backed one, can resemble a bed when viewed from the side, especially if it has a padded seat and backrest.
+
+couch: A couch can be misdetected as a bed, especially if it's a sectional couch with a low profile and a high backrest.
+
+Room where the label may appear: A bed is most likely to appear in a bedroom, given that bedrooms are designed for sleeping and rest.
+
+Answer: [sofa, chair, couch, 0.40, bedroom]

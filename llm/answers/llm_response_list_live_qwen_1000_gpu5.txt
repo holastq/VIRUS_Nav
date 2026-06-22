@@ -1,0 +1,85 @@
+
+bed: Thought: In the COCO classes, a bed is typically a large piece of furniture with a flat surface for sleeping, often with pillows and blankets. It's generally larger than a dining table (0.60) but smaller than a sofa or chair (0.80). The confidence threshold for a bed should be around 0.45, which is within the range [0.25, 0.65].
+
+Misdetection possibilities:
+
+1. Couch: A couch can be misdetected as a bed if it has a flat surface and no backrest, resembling a bed in terms of size and shape.
+2. Chair: A chair could be misdetected as a bed if it is oversized or has a large cushion that makes it appear larger than a normal chair.
+3. Desk: A desk can be misdetected as a bed if it is very large and lacks any features that distinguish it as a workspace, such as a computer or office supplies.
+
+Room where the label may appear: A bed is most likely to appear in a bedroom, which is the primary room designed for sleeping. However, it could also appear in a guest room or a loft bed setup in a living room.
+
+Answer: [couch, chair, desk, 0.45, bedroom]
+toilet: Thought: In the COCO classes, confidence threshold for toilet: A toilet is typically cylindrical in shape with a bowl-like seat and a tank above it. 
+
+It is significantly smaller than larger furniture items like beds (0.65) and is generally considered a small object within a home setting.
+
+The confidence threshold for a toilet should be around 0.40, which is in [0.25, 0.65].
+
+Misdetection possibilities:
+
+sink: A sink can be misdetected as a toilet, especially in bathrooms where they are often located next to each other.
+
+bathtub: A bathtub can look similar to a toilet when viewed from a distance, particularly if the bathroom is compact and the tub is partially obscured.
+
+trash can: A trash can can occasionally be misdetected as a toilet, especially if it is placed near a bathroom and is cylindrical in shape.
+
+Room where the label may appear: A toilet is most likely to appear in a bathroom.
+
+Answer: [sink, bathtub, trash can, 0.40, bathroom]
+tv: Thought: In the COCO classes, confidence threshold for TV: A television set is typically rectangular and flat, often with a screen and a stand or wall mount. It's smaller than a dining table (0.60) but larger than a small object like a cup (0.20). The confidence threshold for TV should be around 0.45, which is within the range [0.25, 0.65].
+
+Misdetection possibilities:
+
+monitor: A monitor, especially a desktop monitor, can be misdetected as a TV due to its rectangular shape and flat design.
+
+laptop: A closed laptop can be mistaken for a TV if it is viewed from the back or side, as both can be thin and rectangular.
+
+projector: A projector, when it is not in use and appears as a rectangular box, could be confused with a TV.
+
+Monitor and laptop can be misdetected at a higher confidence level, while a projector is less likely to be misdetected.
+
+Room where the label may appear: A TV is most commonly found in a living room, bedroom, or den.
+
+Answer: [monitor, laptop, projector, 0.45, living room]
+chair: Thought: In the COCO classes, confidence threshold for chair: A chair is typically a piece of furniture with a seat and backrest, designed for sitting. It is generally smaller than larger objects like beds or dining tables (0.60) but larger than smaller objects like apples (0.25). The confidence threshold for a chair should be around 0.40, which is in [0.25, 0.65].
+
+Misdetection possibilities:
+
+stool: A stool can easily be misdetected as a chair since it also has a seat and backrest, though it is usually smaller in size.
+
+ottoman: An ottoman can be confused with a chair if it has a backrest, as both serve seating purposes.
+
+bar stool: A bar stool can be mistaken for a chair, especially if it has a backrest, as they share a similar design for a single person to sit on.
+
+Room where the label may appear: A chair is most likely to appear in a living room, dining room, or bedroom, given these rooms are common places for seating.
+
+Answer: [stool, ottoman, bar stool, 0.40, living room]
+couch: Thought: In the COCO classes, confidence threshold for sofa: A sofa is typically long and wider than it is tall, designed for seating multiple people. It is larger than smaller objects like apples (0.25) but smaller than larger objects like beds (0.65). 
+
+The confidence threshold for a sofa should be around 0.40, which is within [0.25, 0.65].
+
+Misdetection possibilities:
+
+chair: A chair, especially a modern or armchair-style chair, can sometimes be similar in shape to a sofa, particularly if it has a wide seat and backrest.
+
+ottoman: An ottoman can be misdetected as a sofa because they both serve as seating or resting places, and an ottoman can sometimes have a cushioned top that resembles a sofa.
+
+stool: A stool is much smaller than a sofa and typically lacks the width and height necessary to be mistaken for a sofa.
+
+Room where the label may appear: A couch is most commonly found in a living room or den, where it serves as a central piece of furniture for seating and relaxation.
+
+Answer: [chair, ottoman, stool, 0.40, living room]
+potted plant: Thought: In the COCO classes, confidence threshold for potted plant: A potted plant is typically a plant growing in a container, often with leaves and sometimes flowers. It can vary in size from very small to quite large, but it is generally not as large as furniture items like sofas.
+
+The confidence threshold for a potted plant should be around 0.40, which is within the range [0.25, 0.65].
+
+Misdetection possibilities:
+
+1. Tree: Trees can be misdetected as potted plants if they are small enough and do not have a trunk.
+2. Bush: A bush can be misdetected as a potted plant if it is compact and does not have a clear trunk.
+3. Artificial plant: An artificial plant, especially those that mimic real plants closely, can be confused with a real potted plant.
+
+Room where the label may appear: A potted plant is most likely to appear in a living room, bedroom, or on a windowsill in a kitchen, as these spaces commonly house plants for decoration.
+
+Answer: [tree, bush, artificial plant, 0.40, everywhere]
